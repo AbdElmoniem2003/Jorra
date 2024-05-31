@@ -168,7 +168,7 @@
 /*Unites Options*/
 .unites-options {
     padding-bottom: 5em;
-    gap: 2em;
+    column-gap: 2em;
 
     .container {
         border-radius: 2em;
@@ -176,7 +176,7 @@
 
     .unit {
         border-radius: 1.3em;
-        flex-basis: calc((100% - 1em)/2);
+        flex-basis: calc((100% - 2em)/2);
         margin-bottom: 1em;
         box-shadow: 1px 1px 5px 0px black;
     }
