@@ -104,6 +104,7 @@
 
     .discreption .image {
         flex: 1;
+        display: flex;
 
         img {
             max-width: 100%;
@@ -228,6 +229,21 @@
         flex-basis: 50%;
     }
 
+    .unit .icons {
+        display: none !important;
+        width: 100%;
+        justify-content: space-between;
+        position: absolute;
+        top: 50%;
+        left: 0;
+
+        i {
+            padding: 0.5em;
+            color: white;
+            background-color: rgba(255, 255, 255, 0.3);
+            transform: translateY(-50%);
+        }
+    }
     .unit .properties .members {
         font-weight: var(--font-weight);
     }
@@ -410,11 +426,7 @@ footer {
 }
 
 /* large */
-@media (960px <width <1280px) {
-    body {
-        font-size: 0.9em;
-    }
-
+@media (980px <width <1280px) {
     .container {
         width: calc(100% - 2em) !important;
     }
@@ -463,23 +475,21 @@ footer {
 }
 
 /*medium*/
-@media (688px<width<960px) {
+@media (688px<width<981px) {
+    body {
+        font-size: 0.8em;
+    }
     .container {
-        width: calc(100% - 2em) !important;
+        max-width: calc(100% - 2em) !important;
     }
 
     .nav-bar {
-
         .notifications,
         .links {
             display: none !important;
         }
 
         .container {
-            .logo {
-                transform: translateX(5em);
-            }
-
             >i {
                 align-self: center;
                 font-size: 2em;
@@ -492,8 +502,7 @@ footer {
     }
 
     .introduction .discreption {
-        flex-flow: column wrap;
-        justify-content: baseline;
+        flex-flow: column-reverse;
         height: 50em;
 
     }
@@ -530,9 +539,8 @@ footer {
 
     .introduction .text {
 
-        text-align: center;
+        text-align: center !important;
         margin: auto;
-        flex-basis: 60% !important;
         margin-top: 3em;
         align-items: center;
         color: white;
@@ -588,11 +596,17 @@ footer {
                 width: 100%;
                 height: 100%;
             }
+            .icons {
+                display: flex !important;
+            }
         }
 
         .unites .unit .content {
             flex: 1;
             font-size: 1.5em;
+        }
+        .unites .unit .properties {
+            gap: 0.6em;
         }
 
         .more {
@@ -688,7 +702,7 @@ footer {
 }
 
 /*small*/
-@media (width<669px) {
+@media (width<689px) {
     .nav-bar {
 
         .links,
@@ -710,7 +724,7 @@ footer {
 
         .search-bar {
             flex-flow: column-reverse;
-            bottom: -1em;
+            bottom: -5em;
             padding: 1em;
 
             .search {
@@ -720,7 +734,7 @@ footer {
     }
 
     .how-we-work {
-        padding-top: 10em;
+        padding-top: 15em;
 
         .text h1 {
             color: var(--second-color);
@@ -749,19 +763,7 @@ footer {
             position: relative;
 
             .icons {
-                display: flex;
-                width: 100%;
-                justify-content: space-between;
-                position: absolute;
-                top: 50%;
-                left: 0;
-
-                i {
-                    padding: 0.5em;
-                    color: white;
-                    background-color: rgba(255, 255, 255, 0.3);
-                    transform: translateY(-50%);
-                }
+                display: flex !important;
             }
         }
 
