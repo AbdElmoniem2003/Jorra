@@ -168,8 +168,9 @@
 /*Unites Options*/
 .unites-options {
     padding-bottom: 5em;
+    .unites{
     column-gap: 2em;
-
+    }
     .container {
         border-radius: 2em;
     }
