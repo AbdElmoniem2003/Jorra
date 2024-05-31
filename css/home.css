@@ -468,7 +468,7 @@ footer {
     }
 
     .unites {
-        gap: 2em;
+        column-gap: 2em;
 
         .unit {
             flex-basis: calc((100% - 2em)/2);
