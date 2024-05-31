@@ -168,6 +168,8 @@
 /*Unites Options*/
 .unites-options {
     padding-bottom: 5em;
+    gap: 1em;
+
     .container {
         border-radius: 2em;
     }
@@ -469,7 +471,7 @@ footer {
     }
 
     .unites {
-        column-gap: 2em;
+        gap: 2em;
 
         .unit {
             flex-basis: calc((100% - 2em)/2);
